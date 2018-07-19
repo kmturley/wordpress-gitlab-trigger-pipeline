@@ -19,14 +19,11 @@ Go to your Gitlab project and add a new Pipeline trigger at:
 
     https://gitlab.com/username/project-name/settings/ci_cd
 
-Then go to your server environment configuration e.g:
+Set the Gitlab variables in the 'Settings' > 'General' section on WordPress, using your Gitlab branch, trigger id and token:
 
-    Elastic Beanstalk > Configuration > Software Configuration
-
-Set the environment variables using id and token from your Gitlab Pipeline trigger:
-
-    GITLAB_TRIGGER_ID: XX
-    GITLAB_TRIGGER_TOKEN: XX
+    GITLAB BRANCH: XX
+    GITLAB TRIGGER ID: XX
+    GITLAB TRIGGER TOKEN: XX
 
 
 ## Usage
